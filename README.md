@@ -1,1 +1,1 @@
-"# -Desarrollando-una-Soluci-n-de-IA-Aplicada-" 
+# -Desarrollando-una-Soluci-n-de-IA-Aplicada-
