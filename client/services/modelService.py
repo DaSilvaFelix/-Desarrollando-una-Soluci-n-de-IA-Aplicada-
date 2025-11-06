@@ -1,5 +1,6 @@
 from config.database import DatabaseConfig
 from validations.chatData import ChatData,ChatMessage
+
 class ModelService:
      def __init__(self):
           db_config = DatabaseConfig()
