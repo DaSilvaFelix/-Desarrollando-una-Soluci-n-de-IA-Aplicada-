@@ -1,5 +1,5 @@
 from config.llm import getModel
-from langchain_core.messages.ai import AIMessage
+from helpers.extractResponse import extraer_respuesta_aimessage
 from rich import print
 
 
@@ -20,4 +20,7 @@ class ChatBotService:
               "messages": [{"role": "user", "content": message}]
           })
         
-        return response["messages"][-1].content
+        print(response)
+        print(extraer_respuesta_aimessage(response["messages"][-1]))
+        
+        return extraer_respuesta_aimessage(response["messages"][-1])
